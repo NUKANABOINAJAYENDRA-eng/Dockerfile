@@ -1,3 +1,6 @@
 FROM almalinux:9
-ENTRYPOINT ["ping","-c","5"]
-CMD ["google.com"] #--> CMD can be overriden but ENTRY CANNOT BE overriden
+
+# Comments must be placed on their own line.
+# Correction: ENTRYPOINT *can* actually be overridden using the --entrypoint flag.
+ENTRYPOINT ["ping", "-c", "5"]
+CMD ["google.com"]
