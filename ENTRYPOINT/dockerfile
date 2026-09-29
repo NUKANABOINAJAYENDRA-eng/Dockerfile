@@ -1,3 +1,4 @@
 FROM almalinux:9
 ENTRYPOINT ["ping", "-c", "5"]
-CMD ["google.com"] #--> CMD can be overriden but ENTRY CANNOT BE overriden
+CMD ["google.com"] 
+#--> CMD can be overriden but ENTRY CANNOT BE overriden
